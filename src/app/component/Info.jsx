@@ -1,10 +1,9 @@
 import React from "react";
 
-function Info() {
+function Info({ status }) {
   return (
     <div className="result">
-      <h1>Next Turn : </h1>
-      <h1>Result</h1>
+      <h1>{status}</h1>
     </div>
   );
 }

@@ -1,7 +1,11 @@
 import React from "react";
 
-function Tile() {
-  return <div className="tile">X</div>;
+function Tile({ handleTileClick, tile }) {
+  return (
+    <div className="tile" onClick={handleTileClick}>
+      {tile}
+    </div>
+  );
 }
 
 export default Tile;
